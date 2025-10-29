@@ -41,3 +41,4 @@ console.log("\n--- 2. Usando a API moderna com o Adapter ---");
 const modernApi = new ModernPaymentAPI();
 const adapter = new ModernPaymentAdapter(modernApi);
 const modernProcessor = new PaymentProcessor(adapter);
+modernProcessor.pay(250);
